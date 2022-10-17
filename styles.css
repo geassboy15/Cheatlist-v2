@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    color:white;
+    background-color: rgb(50, 50, 50);
+    font-size: 15px;
+    padding: 1%;
+    padding-left: 5%;
+}
+main{
+    display: flex;
+    max-height: 90vh;
+}
+/* main content */
+.sidebar{
+    overflow: auto;
+    background-color: rgba(246, 248, 244, 0.468);
+    color: black;
+    text-align: center;
+    flex-basis: 25%;
+
+}
+.main-body{
+    overflow: auto;
+    padding: 1.5%;
+    background-color: rgba(211, 230, 211, 0.723);
+    flex-basis: 75%;
+}
+span:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 1s, visibility 1s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 10px solid #dddddd;
+    border-top-color: rgb(243, 40, 40);
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+/* main content */
+.title, .content{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+.title{
+    font-weight: bold;
+    font-size: 25px;
+}
+.content div{
+    margin-bottom: 2%;
+    font-size: 120%;
+}
+.content ul{
+    font-size: 90%;
+    padding: 1.5%;
+    background-color: rgb(230, 237, 244);
+    border: 3px solid black;
+    width: 70vw;
+    margin-top: 2%;
+}
+li{
+    list-style: none;
+    padding: 1vh;
+}
+.sidebar li{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.sidebar li:first-child{
+    padding-top: 2vh;
+}
+.sidebar li:hover{
+    color: white;
+    background-color: rgb(231, 92, 92);
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;    
+}
+footer{
+    background-color: rgb(50, 50, 50);
+    color: rgb(50, 50, 50);
+    text-align: center;
+    justify-content: center;
+    padding-top: 1vh;
+}
