@@ -111,7 +111,7 @@ const arr = [
             <li>Returned checks</li>
             <li>Dealer checks</li>
         </ul>
-    </div   
+    </div>  
     <div>Process reminders:
         <ul>
             <li>Always acknowledge the fax/email - IEM/IFR OBI.</li>
@@ -406,7 +406,7 @@ const arr = [
     name: "Privacy Opt-out", // 20
     message: 
     `
-    <div>Invalid if</div>
+    <div>Invalid if
         <ul>
             <li>Missing a signature.</li>           
         </ul>
